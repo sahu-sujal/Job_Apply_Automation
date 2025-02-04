@@ -3,3 +3,11 @@
 2025-01-31 12:19:42,516 - INFO - Email sent to support@codelancer.in
 2025-01-31 14:46:06,162 - INFO - Email sent to hr@cybersrcc.com
 2025-01-31 14:49:39,884 - INFO - Email sent to swagata@cybersrcc.com
+2025-02-01 15:24:50,685 - INFO - Email sent to sujal020404@gmail.com
+2025-02-01 15:24:54,896 - ERROR - Error sending to sujal020404@gmail.com: 'float' object has no attribute 'strip'
+2025-02-01 15:24:54,896 - ERROR - Error sending to sujal020404@gmail.com: 'float' object has no attribute 'strip'
+2025-02-01 15:24:54,897 - ERROR - Error sending to sujal020404@gmail.com: 'float' object has no attribute 'strip'
+2025-02-01 15:24:54,897 - ERROR - Error sending to sujal020404@gmail.com: 'float' object has no attribute 'strip'
+2025-02-01 15:24:54,897 - ERROR - Error sending to sujal020404@gmail.com: 'float' object has no attribute 'strip'
+2025-02-01 15:24:54,897 - ERROR - Error sending to sujal020404@gmail.com: 'float' object has no attribute 'strip'
+2025-02-01 15:24:54,897 - ERROR - Error sending to sujal020404@gmail.com: 'float' object has no attribute 'strip'

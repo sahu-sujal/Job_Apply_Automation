@@ -9,6 +9,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 from dotenv import load_dotenv
+import shutil
 
 # Load environment variables
 load_dotenv()
@@ -65,14 +66,24 @@ with smtplib.SMTP("smtp.gmail.com", 587) as server:
             msg["Subject"] = subject
             msg.attach(MIMEText(body, "plain"))
             
-            # Attach the selected resume
+            # Rename the resume file and attach it
             if os.path.exists(resume_option):
-                with open(resume_option, "rb") as attachment:
+                # Generate the new file name
+                new_resume_name = f"Sujal_resume.pdf"
+                renamed_resume_path = os.path.join(os.path.dirname(resume_option), new_resume_name)
+                
+                # Copy and rename the file
+                shutil.copy(resume_option, renamed_resume_path)
+
+                with open(renamed_resume_path, "rb") as attachment:
                     part = MIMEBase("application", "octet-stream")
                     part.set_payload(attachment.read())
                 encoders.encode_base64(part)
-                part.add_header("Content-Disposition", f"attachment; filename={os.path.basename(resume_option)}")
+                part.add_header("Content-Disposition", f"attachment; filename={new_resume_name}")
                 msg.attach(part)
+                
+                # Clean up renamed file after attaching
+                os.remove(renamed_resume_path)
             else:
                 logging.warning(f"Attachment not found: {resume_option}")
                 continue
