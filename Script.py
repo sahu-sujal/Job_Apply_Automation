@@ -105,6 +105,10 @@ except Exception as e:
 # Email template
 SUBJECT_TEMPLATE = "Application for {job_position} - Sujal Sahu"
 
+# Rate limit for emails
+RATE_LIMIT = 30
+email_counter = 0
+
 BODY_TEMPLATE = """Dear Hiring Manager,
 
 I am excited to apply for the {job_position} at {company_name}. With my expertise in {skills}, I am confident in my ability to contribute to your team.
@@ -193,6 +197,13 @@ with smtplib.SMTP("smtp.gmail.com", 587) as server:
             # Update application status if email was sent successfully
             if success:
                 update_application_status(SHEET_ID, recipient_email)
+                email_counter += 1
+                
+                # Check if rate limit is reached
+                if email_counter >= RATE_LIMIT:
+                    print(f"\nRate limit of {RATE_LIMIT} emails reached. Stopping the process.")
+                    logging.info(f"Rate limit of {RATE_LIMIT} emails reached. Process stopped.")
+                    break
             
             # Random delay to prevent spam detection
             time.sleep(random.uniform(10, 30))
