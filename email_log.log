@@ -1,0 +1,126 @@
+2025-08-29 12:32:14,769 - INFO - Email sent to prachi.g@protechmanize.com
+2025-08-29 12:32:14,770 - INFO - Attempting to update sheet for email: prachi.g@protechmanize.com with USER_ID: sujal
+2025-08-29 12:32:22,564 - INFO - Update response status: 200
+2025-08-29 12:32:22,564 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 12:32:22,564 - INFO - Updated application status for prachi.g@protechmanize.com by user sujal
+2025-08-29 12:34:05,549 - INFO - Email sent to syed.ali@flint-international.me
+2025-08-29 12:34:05,549 - INFO - Attempting to update sheet for email: syed.ali@flint-international.me with USER_ID: sujal
+2025-08-29 12:34:13,591 - INFO - Update response status: 200
+2025-08-29 12:34:13,591 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 12:34:13,591 - INFO - Updated application status for syed.ali@flint-international.me by user sujal
+2025-08-29 12:36:06,800 - INFO - Email sent to kshitij.sinha@cyraacs.com
+2025-08-29 12:36:06,800 - INFO - Attempting to update sheet for email: kshitij.sinha@cyraacs.com with USER_ID: sujal
+2025-08-29 12:36:16,902 - INFO - Update response status: 200
+2025-08-29 12:36:16,902 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 12:36:16,902 - INFO - Updated application status for kshitij.sinha@cyraacs.com by user sujal
+2025-08-29 12:37:52,760 - INFO - Email sent to Swarna.Pati@IN.GT.COM
+2025-08-29 12:37:52,760 - INFO - Attempting to update sheet for email: Swarna.Pati@IN.GT.COM with USER_ID: sujal
+2025-08-29 12:38:03,380 - INFO - Update response status: 200
+2025-08-29 12:38:03,380 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 12:38:03,381 - INFO - Updated application status for Swarna.Pati@IN.GT.COM by user sujal
+2025-08-29 12:40:27,722 - INFO - Email sent to CV@Arabianfal.com
+2025-08-29 12:40:27,723 - INFO - Attempting to update sheet for email: CV@Arabianfal.com with USER_ID: sujal
+2025-08-29 12:40:37,351 - INFO - Update response status: 200
+2025-08-29 12:40:37,351 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 12:40:37,352 - INFO - Updated application status for CV@Arabianfal.com by user sujal
+2025-08-29 12:43:04,919 - INFO - Email sent to Cv@aldawaa.com.sa
+2025-08-29 12:43:04,919 - INFO - Attempting to update sheet for email: Cv@aldawaa.com.sa with USER_ID: sujal
+2025-08-29 12:43:11,954 - INFO - Update response status: 200
+2025-08-29 12:43:11,955 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 12:43:11,955 - INFO - Updated application status for Cv@aldawaa.com.sa by user sujal
+2025-08-29 12:45:22,833 - INFO - Email sent to Hr.qrm@hotmail.com
+2025-08-29 12:45:22,833 - INFO - Attempting to update sheet for email: Hr.qrm@hotmail.com with USER_ID: sujal
+2025-08-29 12:45:29,188 - INFO - Update response status: 200
+2025-08-29 12:45:29,188 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 12:45:29,193 - INFO - Updated application status for Hr.qrm@hotmail.com by user sujal
+2025-08-29 12:47:05,225 - INFO - Email sent to Rec@alojaimi.com
+2025-08-29 12:47:05,226 - INFO - Attempting to update sheet for email: Rec@alojaimi.com with USER_ID: sujal
+2025-08-29 12:47:15,733 - INFO - Update response status: 200
+2025-08-29 12:47:15,734 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 12:47:15,735 - INFO - Updated application status for Rec@alojaimi.com by user sujal
+2025-08-29 12:49:14,237 - INFO - Email sent to Recruitment@rawabiholding.com
+2025-08-29 12:49:14,238 - INFO - Attempting to update sheet for email: Recruitment@rawabiholding.com with USER_ID: sujal
+2025-08-29 12:49:23,015 - INFO - Update response status: 200
+2025-08-29 12:49:23,015 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 12:49:23,015 - INFO - Updated application status for Recruitment@rawabiholding.com by user sujal
+2025-08-29 12:51:24,096 - INFO - Email sent to Job.s6@hotmail.com
+2025-08-29 12:51:24,096 - INFO - Attempting to update sheet for email: Job.s6@hotmail.com with USER_ID: sujal
+2025-08-29 12:51:31,005 - INFO - Update response status: 200
+2025-08-29 12:51:31,005 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 12:51:31,006 - INFO - Updated application status for Job.s6@hotmail.com by user sujal
+2025-08-29 12:54:02,126 - INFO - Email sent to Careers@dnata.com
+2025-08-29 12:54:02,126 - INFO - Attempting to update sheet for email: Careers@dnata.com with USER_ID: sujal
+2025-08-29 12:54:09,268 - INFO - Update response status: 200
+2025-08-29 12:54:09,268 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 12:54:09,268 - INFO - Updated application status for Careers@dnata.com by user sujal
+2025-08-29 12:56:24,399 - ERROR - Attempt 1 failed for Hr@alesayi_motors.com: {'Hr@alesayi_motors.com': (553, b'5.1.3 The recipient address <Hr@alesayi_motors.com> is not a valid RFC 5321\n5.1.3 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. d9443c01a7336-249065b7413sm14726215ad.132 - gsmtp')}
+2025-08-29 12:56:30,114 - ERROR - Attempt 2 failed for Hr@alesayi_motors.com: {'Hr@alesayi_motors.com': (553, b'5.1.3 The recipient address <Hr@alesayi_motors.com> is not a valid RFC 5321\n5.1.3 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. d9443c01a7336-249065b7413sm14726215ad.132 - gsmtp')}
+2025-08-29 12:56:35,834 - ERROR - Attempt 3 failed for Hr@alesayi_motors.com: {'Hr@alesayi_motors.com': (553, b'5.1.3 The recipient address <Hr@alesayi_motors.com> is not a valid RFC 5321\n5.1.3 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. d9443c01a7336-249065b7413sm14726215ad.132 - gsmtp')}
+2025-08-29 12:58:54,807 - INFO - Email sent to Hr@alarayan.com
+2025-08-29 12:58:54,808 - INFO - Attempting to update sheet for email: Hr@alarayan.com with USER_ID: sujal
+2025-08-29 12:59:06,350 - INFO - Update response status: 200
+2025-08-29 12:59:06,351 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 12:59:06,351 - INFO - Updated application status for Hr@alarayan.com by user sujal
+2025-08-29 13:00:49,984 - INFO - Email sent to Recruiting.ksa@mcdermott.com
+2025-08-29 13:00:49,984 - INFO - Attempting to update sheet for email: Recruiting.ksa@mcdermott.com with USER_ID: sujal
+2025-08-29 13:00:56,521 - INFO - Update response status: 200
+2025-08-29 13:00:56,522 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 13:00:56,522 - INFO - Updated application status for Recruiting.ksa@mcdermott.com by user sujal
+2025-08-29 13:02:57,691 - INFO - Email sent to Recruitment@aytb.com
+2025-08-29 13:02:57,692 - INFO - Attempting to update sheet for email: Recruitment@aytb.com with USER_ID: sujal
+2025-08-29 13:03:03,117 - INFO - Update response status: 200
+2025-08-29 13:03:03,118 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 13:03:03,118 - INFO - Updated application status for Recruitment@aytb.com by user sujal
+2025-08-29 13:05:05,115 - INFO - Email sent to Wadaef@gtecorp.com
+2025-08-29 13:05:05,115 - INFO - Attempting to update sheet for email: Wadaef@gtecorp.com with USER_ID: sujal
+2025-08-29 13:05:10,539 - INFO - Update response status: 200
+2025-08-29 13:05:10,540 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 13:05:10,540 - INFO - Updated application status for Wadaef@gtecorp.com by user sujal
+2025-08-29 13:07:33,424 - INFO - Email sent to Careers@nesr.com
+2025-08-29 13:07:33,425 - INFO - Attempting to update sheet for email: Careers@nesr.com with USER_ID: sujal
+2025-08-29 13:07:42,701 - INFO - Update response status: 200
+2025-08-29 13:07:42,701 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 13:07:42,701 - INFO - Updated application status for Careers@nesr.com by user sujal
+2025-08-29 13:09:19,327 - INFO - Email sent to Recruit@farm.com.sa
+2025-08-29 13:09:19,327 - INFO - Attempting to update sheet for email: Recruit@farm.com.sa with USER_ID: sujal
+2025-08-29 13:09:29,843 - INFO - Update response status: 200
+2025-08-29 13:09:29,843 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 13:09:29,844 - INFO - Updated application status for Recruit@farm.com.sa by user sujal
+2025-08-29 13:12:01,267 - INFO - Email sent to Info@alhumamlaw.com
+2025-08-29 13:12:01,268 - INFO - Attempting to update sheet for email: Info@alhumamlaw.com with USER_ID: sujal
+2025-08-29 13:12:10,072 - INFO - Update response status: 200
+2025-08-29 13:12:10,072 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 13:12:10,072 - INFO - Updated application status for Info@alhumamlaw.com by user sujal
+2025-08-29 13:14:16,944 - INFO - Email sent to Hr1@gulfteksaudi.com
+2025-08-29 13:14:16,944 - INFO - Attempting to update sheet for email: Hr1@gulfteksaudi.com with USER_ID: sujal
+2025-08-29 13:14:26,296 - INFO - Update response status: 200
+2025-08-29 13:14:26,296 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 13:14:26,296 - INFO - Updated application status for Hr1@gulfteksaudi.com by user sujal
+2025-08-29 13:16:30,046 - INFO - Email sent to Catcosa@catcosa.com
+2025-08-29 13:16:30,047 - INFO - Attempting to update sheet for email: Catcosa@catcosa.com with USER_ID: sujal
+2025-08-29 13:16:40,339 - INFO - Update response status: 200
+2025-08-29 13:16:40,340 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 13:16:40,340 - INFO - Updated application status for Catcosa@catcosa.com by user sujal
+2025-08-29 13:18:33,768 - INFO - Email sent to Cv@tafear.com
+2025-08-29 13:18:33,768 - INFO - Attempting to update sheet for email: Cv@tafear.com with USER_ID: sujal
+2025-08-29 13:18:42,252 - INFO - Update response status: 200
+2025-08-29 13:18:42,253 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 13:18:42,253 - INFO - Updated application status for Cv@tafear.com by user sujal
+2025-08-29 13:20:50,185 - INFO - Email sent to Recruitment@sraco.com.sa
+2025-08-29 13:20:50,185 - INFO - Attempting to update sheet for email: Recruitment@sraco.com.sa with USER_ID: sujal
+2025-08-29 13:20:56,705 - INFO - Update response status: 200
+2025-08-29 13:20:56,706 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 13:20:56,706 - INFO - Updated application status for Recruitment@sraco.com.sa by user sujal
+2025-08-29 13:23:16,687 - INFO - Email sent to Career@sidco.com.sa
+2025-08-29 13:23:16,687 - INFO - Attempting to update sheet for email: Career@sidco.com.sa with USER_ID: sujal
+2025-08-29 13:23:25,460 - INFO - Update response status: 200
+2025-08-29 13:23:25,461 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 13:23:25,461 - INFO - Updated application status for Career@sidco.com.sa by user sujal
+2025-08-29 13:25:28,184 - INFO - Email sent to Info@atco.com.sa
+2025-08-29 13:25:28,184 - INFO - Attempting to update sheet for email: Info@atco.com.sa with USER_ID: sujal
+2025-08-29 13:25:35,107 - INFO - Update response status: 200
+2025-08-29 13:25:35,107 - INFO - Update response content: {"status":"success","message":"Updated successfully"}
+2025-08-29 13:25:35,108 - INFO - Updated application status for Info@atco.com.sa by user sujal
+2025-08-29 13:27:21,071 - ERROR - Attempt 1 failed for HRdepartmental@sa.yokogawa.com: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-249065b7413sm14726215ad.132 - gsmtp')
+2025-08-29 13:27:26,871 - ERROR - Attempt 2 failed for HRdepartmental@sa.yokogawa.com: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-249065b7413sm14726215ad.132 - gsmtp')
+2025-08-29 13:27:32,655 - ERROR - Attempt 3 failed for HRdepartmental@sa.yokogawa.com: (550, b'5.4.5 Daily user sending limit exceeded. For more information on Gmail\n5.4.5 sending limits go to\n5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-249065b7413sm14726215ad.132 - gsmtp')

@@ -11,14 +11,11 @@ from email import encoders
 from dotenv import load_dotenv
 import requests
 
-# Skill templates for different roles
-VAPT_SKILLS = """Burpsuite, OWASP, Nmap, Wireshark, Vulnerability Assessment, Penetration Testing, Web Application Security, Network Security"""
+# Skills template
+SKILLS = """CI/CD, Jenkins, Docker, Bash Scripting, Linux, AWS, Burpsuite, OWASP, Nmap, Wireshark, Vulnerability Assessment, Penetration Testing, Web Application Security, Network Security"""
 
-DEVOPS_SKILLS = """CI/CD, Jenkins, Docker, Bash Scripting, Linux, AWS"""
-
-# Resume paths
-VAPT_RESUME = "resume_sujal.pdf"
-DEVOPS_RESUME = "sujal_resume.pdf"
+# Resume path
+RESUME_PATH = "Sujal_CV.pdf"
 
 # Google Sheet Configuration
 SHEET_ID = '1dS5_pWGGrxfXY5jdIm-WjcqC76pCSXdd9RXt3gg7bZw'
@@ -43,7 +40,7 @@ def update_application_status(sheet_id, email):
         payload = {
             'sheetId': sheet_id,
             'email': email,
-            'status': USER_ID  # Store the USER_ID instead of 'TRUE'
+            'status': USER_ID  
         }
         
         logging.info(f"Attempting to update sheet for email: {email} with USER_ID: {USER_ID}")
@@ -75,25 +72,6 @@ USER_ID = os.getenv("USER_ID")
 if not all([EMAIL, APP_PASSWORD, USER_ID]):
     logging.error("Email, APP_PASSWORD, or USER_ID not found in environment variables")
     exit(1)
-
-# Role selection
-while True:
-    print("\nWhich role would you like to apply for?")
-    print("1. VAPT (Vulnerability Assessment and Penetration Testing)")
-    print("2. DevOps")
-    choice = input("Enter your choice (1 or 2): ").strip()
-    
-    if choice == "1":
-        SELECTED_ROLE = "vapt"
-        break
-    elif choice == "2":
-        SELECTED_ROLE = "devops"
-        break
-    else:
-        print("Invalid choice. Please enter 1 for VAPT or 2 for DevOps.")
-
-print(f"\nSelected role: {SELECTED_ROLE.upper()}")
-logging.info(f"User selected role: {SELECTED_ROLE}")
 
 # Read data from Google Sheet
 try:
@@ -137,28 +115,14 @@ with smtplib.SMTP("smtp.gmail.com", 587) as server:
             recipient_email = row["RecipientEmail"].strip()
             job_position = row["JobPosition"].strip()
             company_name = row["CompanyName"].strip()
-            role_type = row["Skills"].strip().lower()  # Should be either 'vapt' or 'devops'
             
-            if not recipient_email or role_type not in ['vapt', 'devops']:
-                logging.warning(f"Skipping row {index}: Missing required data or invalid role type")
+            if not recipient_email:
+                logging.warning(f"Skipping row {index}: Missing required data")
                 continue
-                
-            # Skip if role doesn't match selected role
-            if role_type != SELECTED_ROLE:
-                logging.info(f"Skipping {row['CompanyName']}: Not a {SELECTED_ROLE.upper()} role")
-                continue
-
-            # Set skills and resume based on role type
-            if role_type == 'vapt':
-                skills = VAPT_SKILLS
-                resume_path = VAPT_RESUME
-            else:  # devops
-                skills = DEVOPS_SKILLS
-                resume_path = DEVOPS_RESUME
 
             # Personalize subject and body
             subject = SUBJECT_TEMPLATE.format(job_position=job_position)
-            body = BODY_TEMPLATE.format(job_position=job_position, company_name=company_name, skills=skills)
+            body = BODY_TEMPLATE.format(job_position=job_position, company_name=company_name, skills=SKILLS)
             
             # Compose the email
             msg = MIMEMultipart()
@@ -168,16 +132,16 @@ with smtplib.SMTP("smtp.gmail.com", 587) as server:
             msg.attach(MIMEText(body, "plain"))
             
             # Attach resume
-            if os.path.exists(resume_path):
-                with open(resume_path, "rb") as attachment:
+            if os.path.exists(RESUME_PATH):
+                with open(RESUME_PATH, "rb") as attachment:
                     part = MIMEBase("application", "octet-stream")
                     part.set_payload(attachment.read())
                 encoders.encode_base64(part)
-                filename = os.path.basename(resume_path)
+                filename = os.path.basename(RESUME_PATH)
                 part.add_header("Content-Disposition", f"attachment; filename={filename}")
                 msg.attach(part)
             else:
-                logging.warning(f"Resume not found: {resume_path}")
+                logging.warning(f"Resume not found: {RESUME_PATH}")
                 continue
 
             # Send email with retry mechanism
@@ -204,9 +168,10 @@ with smtplib.SMTP("smtp.gmail.com", 587) as server:
                     print(f"\nRate limit of {RATE_LIMIT} emails reached. Stopping the process.")
                     logging.info(f"Rate limit of {RATE_LIMIT} emails reached. Process stopped.")
                     break
-            
-            # Random delay to prevent spam detection
-            time.sleep(random.uniform(10, 30))
+              # Random delay to prevent spam detection (80-150 seconds)
+            delay_time = random.uniform(90, 150)
+            print(f"Waiting for {delay_time:.1f} seconds before sending next email...")
+            time.sleep(delay_time)
         
         except Exception as e:
             logging.error(f"Error sending to {recipient_email}: {e}")
